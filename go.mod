@@ -175,7 +175,7 @@ require (
 	github.com/0xPolygon/agglayer v0.0.1
 	github.com/0xPolygon/cdk-data-availability v0.0.5
 	github.com/fatih/color v1.16.0
-	github.com/near/rollup-data-availability v0.2.4-0.20240411160245-671f643e145b
+	github.com/near/rollup-data-availability v0.2.4-0.20240416102651-87054f3724b7
 	github.com/prometheus/client_golang v1.18.0
 	golang.org/x/exp v0.0.0-20231110203233-9a3e6036ecaa
 )

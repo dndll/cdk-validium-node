@@ -616,6 +616,7 @@ run-near:
 	$(RUNZKPROVER)
 	$(RUNPERMISSIONLESSZKPROVER)
 	$(RUNAPPROVE)
+	# state for this
 	NEWCONTRACT=$$(cd /home/common/projects/data-availability/rollup-data-availability/eth && forge script Deploy --fork-url local --broadcast --legacy --json | jq -R 'fromjson?' | jq -r '.returns.da.value') $(DOCKERCOMPOSE) up  -d near-set-dap 
 	$(RUNPERMISSIONLESSNODENEAR)
 	# sleep 3
@@ -819,14 +820,12 @@ stop-permissionless-dac: ## Stops the permissionless node that is forced to sync
 .PHONY: run-permissionless-near
 ## Runs a permissionless node that is forced to sync through NEAR 
 run-permissionless-near: run-node run-permissionless-dependencies 
-	# TODO: NEAR Localnet
 	$(RUNPERMISSIONLESSNODENEAR)
 
 .PHONY: stop-permissionless-near
 stop-permissionless-near: ## Stops the permissionless node that is forced to sync through NEAR 
 	$(STOPPERMISSIONLESSNODENEAR)
 	$(STOPPERMISSIONLESSZKPROVER)
-	# TODO: near localnet
 
 
 
