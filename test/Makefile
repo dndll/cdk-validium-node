@@ -610,7 +610,9 @@ run-near:
 	$(RUNPOOLDB)
 	$(RUNEVENTDB)
 	$(RUNL1NETWORK)
+	$(DOCKERCOMPOSE) up -d --build near-localnet
 	sleep 1
+	$(DOCKERCOMPOSE) up near-localnet-print-key
 	$(RUNZKPROVER)
 	$(RUNPERMISSIONLESSZKPROVER)
 	$(RUNAPPROVE)
