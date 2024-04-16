@@ -620,6 +620,14 @@ github.com/near/rollup-data-availability v0.2.4-0.20240410124327-96cbd87c2f54 h1
 github.com/near/rollup-data-availability v0.2.4-0.20240410124327-96cbd87c2f54/go.mod h1:k8/pfs2vlJdpgeifiLQf62SQZYGJUev1T/iYfCVT16c=
 github.com/near/rollup-data-availability v0.2.4-0.20240411160245-671f643e145b h1:Wz79ek5EUmJPC1KVUj7bSwYegkzZf9PEdM8Pj77z8NI=
 github.com/near/rollup-data-availability v0.2.4-0.20240411160245-671f643e145b/go.mod h1:k8/pfs2vlJdpgeifiLQf62SQZYGJUev1T/iYfCVT16c=
+github.com/near/rollup-data-availability v0.2.4-0.20240415155120-71097ee4a400 h1:dkWHW01VyNLQZAtE1HvmIjfpXOW2DhTttpbnztH/KGE=
+github.com/near/rollup-data-availability v0.2.4-0.20240415155120-71097ee4a400/go.mod h1:k8/pfs2vlJdpgeifiLQf62SQZYGJUev1T/iYfCVT16c=
+github.com/near/rollup-data-availability v0.2.4-0.20240416083204-3aedf5e83125 h1:A0UiStZvtbQWGAEuYWS6j0s23UUN1ZjNKHsdNHjYsks=
+github.com/near/rollup-data-availability v0.2.4-0.20240416083204-3aedf5e83125/go.mod h1:k8/pfs2vlJdpgeifiLQf62SQZYGJUev1T/iYfCVT16c=
+github.com/near/rollup-data-availability v0.2.4-0.20240416083505-a9fbe6750496 h1:/OflcvSE8jYtIwNUeA52daLaGX9VzyvxbwEVpUR0Khs=
+github.com/near/rollup-data-availability v0.2.4-0.20240416083505-a9fbe6750496/go.mod h1:k8/pfs2vlJdpgeifiLQf62SQZYGJUev1T/iYfCVT16c=
+github.com/near/rollup-data-availability v0.2.4-0.20240416102651-87054f3724b7 h1:AI+r0WU60BWxPB3eDP0QT6gcJCwW/Ufq9CKCbuIvRVs=
+github.com/near/rollup-data-availability v0.2.4-0.20240416102651-87054f3724b7/go.mod h1:k8/pfs2vlJdpgeifiLQf62SQZYGJUev1T/iYfCVT16c=
 github.com/nxadm/tail v1.4.4/go.mod h1:kenIhsEOeOJmVchQTgglprH7qJGnHDVpk1VPCcaMI8A=
 github.com/nxadm/tail v1.4.8 h1:nPr65rt6Y5JFSKQO7qToXr7pePgD6Gwiw05lkbyAQTE=
 github.com/nxadm/tail v1.4.8/go.mod h1:+ncqLTQzXmGhMZNUePPaPqPvBxHAIsmXswZKocGu+AU=
