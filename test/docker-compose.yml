@@ -735,11 +735,11 @@ services:
     ports:
       - 6565:5888
 
-  near-localnet-print-key:
-    container_name: near-localnet-print-key
+  near-localnet-set-key:
+    container_name: near-localnet-set-key
     build:
       context: ./config/near
-      dockerfile: images/near-sandbox.Dockerfile
+      dockerfile: sandbox.Dockerfile
     volumes:
       - near-sandbox-data:/root/.near
       - ./config/near-http-sidecar.json:/config.json
@@ -751,8 +751,8 @@ services:
   near-localnet:
     container_name: near-localnet
     build:
-      context: ./images
-      dockerfile: near-sandbox.Dockerfile
+      context: ./config/near
+      dockerfile: sandbox.Dockerfile
     volumes:
       - near-sandbox-data:/root/.near
     ports:

@@ -612,12 +612,11 @@ run-near:
 	$(RUNL1NETWORK)
 	$(DOCKERCOMPOSE) up -d --build near-localnet
 	sleep 1
-	$(DOCKERCOMPOSE) up near-localnet-print-key
+	$(DOCKERCOMPOSE) up near-localnet-set-key
 	$(RUNZKPROVER)
 	$(RUNPERMISSIONLESSZKPROVER)
 	$(RUNAPPROVE)
-	# state for this
-	NEWCONTRACT=$$(cd /home/common/projects/data-availability/rollup-data-availability/eth && forge script Deploy --fork-url local --broadcast --legacy --json | jq -R 'fromjson?' | jq -r '.returns.da.value') $(DOCKERCOMPOSE) up  -d near-set-dap 
+	make deploy-nearda
 	$(RUNPERMISSIONLESSNODENEAR)
 	# sleep 3
 	$(RUNSYNC)
@@ -689,6 +688,10 @@ send-transfers: ## sends some ETH transfers txs to test the network
 .PHONY: deploy-uniswap
 deploy-uniswap: ## deploy the uniswap environment to the network
 	go run ./scripts/uniswap/main.go .
+
+.PHONY: deploy-nearda
+deploy-nearda:
+	go run ./scripts/nearda/main.go .
 
 .PHONY: run-db-scripts
 run-db-scripts: ## Executes scripts on the db after it has been initialized, potentially using info from the environment
